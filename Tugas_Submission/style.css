@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Quicksand',sans-serif;
+    margin: 0;
+}
+
+.jumbotron {
+    font: normal bolder 20px 'Quicksand';
+    text-align: center;
+    color :black;
+    padding: 60px;
+    background-image: url('assets/wallpaper.jpg');
+    background-attachment:  fixed;
+    background-size: cover;
+    background-position: 0px;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #14C38E;
+    padding:5px;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight:400;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    /* float: left;
+    width: 75%; */
+    /* border: 1px solid #000; */
+}
+
+.kotak {
+    padding: 5px;
+    height: 600px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #B8F1B0;
+    border-radius: 5px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card {
+    border: 2px solid #000;
+    width: 150px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FCF9C6;
+
+}
+
+.describe {
+    text-align: center;
+    padding: 20px;
+}
+
+.harga {
+    font-weight: bolder;
+    color: red;
+}
+
+button {
+    background-color: aqua;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 75px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* .store {
+    border: 1px solid #000;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+} */
+    
+
+.child {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    text-align: center;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+/* .card-aside {
+
+} */
+
+footer {
+    padding: 10px;
+    background-color: #E0DECA;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:513px) {
+    aside,#content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .kotak,aside {
+        margin-top: 10px;
+        height: fit-content;
+    }
+
+    .child {
+        display: block;
+        text-align: center;
+    }
+}
+    
